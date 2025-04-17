@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .bg-box {
+        background: url(onessss.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .box {
+        cursor: pointer;
+        height: 100%;
+    }
+
+    .box img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+</style>
+</head>
+
+<body>
+
+
+
+
+  
+      <!-- spalsh screen -->
+
+      <style>
+        *{
+            padding: 0; margin: 0;
+        }
+        .splashscreen {
+            width: 100%;
+            height: 100vh;
+            background-color: #000000;
+            display: flex;
+            justify-content: center; align-items: center;
+            font-family: arial;
+            font-size: 35px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1111111;
+            display: none;
+        }
+    </style>
+
+    <div class="splashscreen">
+        <span class="sp" style="height: 300px;width: 80px; background: rgb(0,0,0);background: radial-gradient(circle, rgba(0,0,0,1) 20%, rgb(255, 255, 255) 32%); border-radius: 30px;">
+        </span>
+        
+
+    </div>
+    
+    
+
+    <script>
+        document.addEventListener(
+            'DOMContentLoaded', function()
+            {
+                let splashVar = document.getElementsByClassName("splashscreen")[0];
+                if (splashVar){
+                    setTimeout(function(){
+                        splashVar.style.display = "flex"
+                        setTimeout(function(){
+                            splashVar.style.display = "none"
+                        },6000)
+                    }
+        )}
+            }
+        )
+    </script>
+
+  <!-- nav start -->
+
+  <div class="container-fluid fi-sec">
+
+    <div class="container">
+
+      <div class="row">
+
+        <nav class="navbar navbar-expand-lg  py-3" data-bs-theme="dark">
+          <div class="container">
+            <a class="navbar-brand text-white" href="#"><img src="logo (3).png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fw-bold text-white" href="#HOME" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    HOME
+                  </a>
+                  <ul class="dropdown-menu bg-black">
+                    <li><a class="dropdown-item text-white bg-black" href="#">Practisearea</a></li>
+                    <li><a class="dropdown-item text-white bg-black" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider text-white">
+                    </li>
+                    <li><a class="dropdown-item text-white bg-black" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-md-4 fw-bold text-white" aria-current="page" href="#ABOUT">ABOUT </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-md-4 fw-bold text-white" aria-current="page" href="#Expert">Experts</a>
+                </li>
+                + <li class="nav-item">
+                  <a class="nav-link mx-md-4 fw-bold text-white" aria-current="page" href="#Tickets">Tickets
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-md-4 fw-bold text-white" aria-current="page" href="#Help">HELP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-md-4 fw-bold text-white" aria-current="page" href="#Help">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-md-4 fw-bold text-white" aria-current="page" href="#Contact">Contact</a>
+                </li>
+
+              </ul class="navbar-nav  mb-2 mb-lg-4">
+              <div style="border: 2px solid blue;border-radius: 30px;padding: 10px 20px;"
+                class="navl text-white fw-bold">Buy Ticket</div>
+
+            </div>
+          </div>
+        </nav>
+        <!-- nav ends -->
+
+      </div>
+
+      <div class="row jk">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active indi"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" class="indi ms-3"
+              aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner py-5">
+            <div class="carousel-item active py-5">
+              <div class="row">
+                <div class="col-lg-6 py-5 left d-flex justify-content-center align-items-start flex-column" style="">
+                  <span
+                    style="background-color: #0072ff33;padding: 12px;border-radius: 30px;color: white;font-weight: 530;"><i
+                      class="bi bi-calendar  text-primary fw-bold  p-2"></i> December 3rd to 7th <i
+                      class="bi bi-geo-alt-fill  text-primary fw-bold ms-3 p-2"></i> Los Angless, California</span>
+                  <h1 class="fw-bold display-2 mt-2 fi-text">Autovent 2023</h1>
+                  <p class="mt-2" style="color: #ffffff80;font-size: 17px;">Aute esse non magna elit dolore dolore dolor
+                    sit est. Ea
+                    occaecat ea duis laborum reprehenderit id cillum tempor cupidatat qui nisi proident nostrud dolore
+                    id do eiusmod. Lorem ipsum non labore.</p>
+                  <!-- From Uiverse.io by kosedagyazilim -->
+                  <button class="button mt-2">Get Ticket</button>
+
+                </div>
+                <div class="col-lg-6 py-5 right d-flex justify-content-center align-items-center">
+                  <img style="height: 100%;width: 100%;object-fit: contain;" src="car-2.png" alt="">
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row">
+                <div class="col-lg-6 py-5 left d-flex justify-content-center align-items-start flex-column" style="">
+                  <span
+                    style="background-color: #0072ff33;padding: 12px;border-radius: 30px;color: white;font-weight: 530;"><i
+                      class="bi bi-calendar  text-primary fw-bold  p-2"></i> December 3rd to 7th <i
+                      class="bi bi-geo-alt-fill  text-primary fw-bold ms-3 p-2"></i> Los Angless, California</span>
+                  <h1 class="fw-bold display-2 mt-2 fi-text">The Future of <br> Automotive</h1>
+                  <p class="mt-2" style="color: #ffffff80;font-size: 17px;">Aute esse non magna elit dolore dolore dolor
+                    sit est. Ea
+                    occaecat ea duis laborum reprehenderit id cillum tempor cupidatat qui nisi proident nostrud dolore
+                    id do eiusmod. Lorem ipsum non labore.</p>
+                  <!-- From Uiverse.io by kosedagyazilim -->
+                  <button class="button mt-2">Get Ticket</button>
+
+                </div>
+                <div class="col-lg-6 py-5 right d-flex justify-content-center align-items-center">
+                  <img style="height: 100%;width: 100%;object-fit: contain;" src="car-3.png" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECOND - SECTION -->
+  <div class="container-fluid  bg-black">
+
+    <div class="row flex-nowrap overflow-hidden">
+
+      <div class="col-lg-4 sli py-5 d-flex justify-content-around align-items-center  ">
+        <h2 class="sec-text fs-1">TOYOTA</h2>
+      </div>
+      <div class="col-lg-4 sli d-flex justify-content-center align-items-center">
+        <span style="width: 100px;height: 8px;background: rgba(58, 54, 161, 0.568);
+    background: linear-gradient(86deg, rgba(46, 255, 57, 0.469) 40%, rgb(0, 89, 255) 100%);display: flex;"></span>
+      </div>
+      <div class="col-lg-4 py-5 d-flex justify-content-around align-items-center  sli">
+        <h2 class="sec-text fs-1">RANGE ROVER</h2>
+      </div>
+      <div class="col-lg-4 sli d-flex justify-content-center align-items-center">
+        <span style="width: 100px;height: 8px;background: rgba(58, 54, 161, 0.568);
+    background: linear-gradient(86deg, rgba(46, 255, 57, 0.469) 40%, rgb(0, 89, 255) 100%);display: flex;"></span>
+      </div>
+
+      <div class="col-lg-4 py-5 d-flex justify-content-around align-items-center  sli">
+        <h2 class="sec-text fs-1">Audi</h2>
+      </div>
+      <div class="col-lg-4 sli d-flex justify-content-center align-items-center">
+        <span style="width: 100px;height: 8px;background: rgba(58, 54, 161, 0.568);
+    background: linear-gradient(86deg, rgba(46, 255, 57, 0.469) 40%, rgb(0, 89, 255) 100%);display: flex;"></span>
+      </div>
+
+      <div class="col-lg-4 py-5 d-flex justify-content-around align-items-center  sli">
+        <h2 class="sec-text fs-1">BMW </h2>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- THERD - SECTION -->
+  <div class="container-fluid bg-black" id="ABOUT" >
+
+    <div class="container">
+
+      <div class="row" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+
+        <P
+          style="color: #FFFFFFbf;font-size: 32px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+          Welcome to a world where engineering marvels and artistic design collide, where innovation takes center stage,
+          and where the passion for automotive excellence is on full display. Step into the realm of our mesmerizing car
+          exhibition, an immersive journey through the evolution of automotive technology, style, and performance.</P>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOR - SECTION -->
+  <div class="container-fluid bg-black py-5">
+
+    <div class="container">
+
+      <div class="row py-5" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+
+        <h1 class="display-2 text-center fw-bold text-white">December <span class="display-3 fw-bold" style="  background: -webkit-linear-gradient(#021a79, #84da71);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;"> 3 - 7</span> </h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6 py-5" style="position: relative;" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+          <img style="height: 350px;width: 100%;object-fit: cover;" src="car-1.jpg" alt="">
+          <img style="position: absolute;left: -30px;top: 10px;" src="dotted.png" alt="">
+        </div>
+        <div class="col-lg-6 py-4 d-flex justify-content-center align-items-center flex-column"
+          style="background-image: url(circle-gradient.png);background-repeat: no-repeat;background-size: cover;" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+          <h2 class="text-white fw-bold  display-4">WELCOME TO THE <span style=" text-transform: uppercase;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, .75);">BIGGEST</span> <span style="background: -webkit-linear-gradient(#021a79, #84da71);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;"> AUTO Event </span> 2023</h2>
+
+          <div class="d-flex py-3">
+            <img style="height: 60px;object-fit: cover;" src="arrow-up-left.png" alt="">
+            <p class="ms-4" style="color: #ffffff80;font-size: 18px;">Autovent a celebration of human ingenuity and a
+              testament to the ever-evolving landscape of transportation. From sleek aerodynamics to revolutionary
+              sustainable solutions, each exhibit embodies the spirit of progress that propels the automotive industry
+              forward.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FIVE - SECTION -->
+  <div class="container-fluid bg-black">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column"
+          style="background-image: url(circle-gradient\ \(1\).png);background-size: contain; background-position: center; height: 300px;background-repeat: no-repeat;" data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1800">
+          <h1 class="display-1  fw-bold" style="background: -webkit-linear-gradient(#021a79, #84da71);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;">150</h1>
+          <h5 class="text-white fw-bold text-center"> Automotive <br>
+            Brands</h5>
+        </div>
+
+        <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column"
+          style="background-image: url(circle-gradient-2.png);background-size: contain;height: 300px;background-position: center; background-repeat: no-repeat;" data-aos="fade-up" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1800">
+          <h1 class="display-1  fw-bold" style="text-transform: uppercase;
+          color: transparent;
+          -webkit-text-stroke: 1px rgba(255, 255, 255, .75);">32</h1>
+          <h5 class="text-white fw-bold text-center">Countries
+            <br>
+            Participated
+          </h5>
+        </div>
+
+        <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column"
+          style="background-image: url(circle-gradient\ \(1\).png);background-size: contain;height: 300px;background-position: center; background-repeat: no-repeat;" data-aos="fade-down" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1800">
+          <h1 class="display-1  fw-bold" style="background: -webkit-linear-gradient(#021a79, #84da71);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;">12</h1>
+          <h5 class="text-white fw-bold text-center"> Automotive <br>
+            FIGRES</h5>
+        </div>
+
+        <div class="col-lg-3 d-flex justify-content-center align-items-center flex-column"
+          style="background-image: url(circle-gradient-2.png);background-size: contain;height: 300px;background-repeat: no-repeat;background-position: center;" data-aos="fade-up" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1800">
+          <h1 class="display-1  fw-bold"
+            style="text-transform: uppercase;-webkit-text-stroke: 1px rgba(255, 255, 255, .75);color: transparent;">5
+          </h1>
+          <h5 class="text-white fw-bold text-center"> DAYS <br>
+            PRO</h5>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- SIX - SECTION -->
+  <div class="container-fluid bg-black py-5" id="Expert">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-6 py-4">
+          <h1 class="fw-bold text-white display-5" data-aos="fade-right" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1800">PRESENTING <span
+              style="-webkit-text-stroke: 1px rgba(255, 255, 255, .75);text-transform: uppercase;color: transparent;">
+              EXPERTS </span><br> IN THE <span
+              style="background: -webkit-linear-gradient(#021a79, #84da71); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+              AUTOMATIVE </span> <br> INDUSTRY </h1>
+          <div class="d-flex py-3"
+            style="background-image: url(circle-gradient-2\ \(1\).png);height: 200px;background-size: contain;background-repeat: no-repeat;">
+            <img style="height: 60px;object-fit: cover;" src="arrow-up-left.png" alt="">
+            <p class="ms-4" style="color: #ffffff80;font-size: 18px;" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1800">Autovent a celebration of human ingenuity and a
+              testament to the ever-evolving landscape of transportation. From sleek aerodynamics to revolutionary
+              sustainable solutions, each exhibit embodies the spirit of progress that propels the automotive industry
+              forward.</p>
+          </div>
+
+        </div>
+        <div class="col-lg-6 py-4" data-aos="fade-left" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1800">
+          <div class="row py-3">
+            <div class="col-md-3  sevan-box col-6 py-2 d-flex justify-content-center align-items-center"
+              style="position: relative;overflow: hidden;border: 1px solid rgb(0, 0, 0);">
+              <img style="height: 140px;width: 100%;object-fit: cover;" src="1 (2).jpg" alt="">
+              <!-- <span class="fw-bold text-white text-center"
+                style="position: absolute;left: 11px; background-color: blue;bottom: 0;padding: 2px 23px;font-size: 14px;">Elon
+                MUSK</span> -->
+            </div>
+
+            <div class="col-md-3  sevan-box col-6 py-2 d-flex justify-content-center align-items-center"
+              style="position: relative;overflow: hidden;border: 1px solid rgb(0, 0, 0);">
+              <img style="height: 140px;width: 100%;object-fit: cover;" src="4 (3).jpg" alt="">
+              <!-- <span class="fw-bold text-white text-center"
+              style="position: absolute;left: 11px; background-color: blue;bottom: 0;padding: 2px 23px;font-size: 14px;">Elon
+              MUSK</span> -->
+            </div>
+
+            <div class="col-md-3  sevan-box col-6 py-2 d-flex justify-content-center align-items-center"
+              style="position: relative;overflow: hidden;border: 1px solid rgb(0, 0, 0);">
+              <img style="height: 140px;width: 100%;object-fit: cover;" src="4 (4).jpg" alt="">
+              <!-- <span class="fw-bold text-white text-center"
+            style="position: absolute;left: 11px; background-color: blue;bottom: 0;padding: 2px 23px;font-size: 14px;">Elon
+            MUSK</span> -->
+            </div>
+
+            <div class="col-md-3  sevan-box col-6 py-2 d-flex justify-content-center align-items-center"
+              style="position: relative;overflow: hidden;border: 1px solid rgb(0, 0, 0);">
+              <img style="height: 140px;width: 100%;object-fit: cover;" src="4 (5).jpg" alt="">
+              <!-- <span class="fw-bold text-white text-center"
+          style="position: absolute;left: 11px; background-color: blue;bottom: 0;padding: 2px 23px;font-size: 14px;">Elon
+          MUSK</span> -->
+            </div>
+
+            <div class="col-md-3  sevan-box hhb col-6 py-2 d-flex justify-content-center align-items-center"
+              style="position: relative;overflow: hidden;border: 1px solid rgb(0, 0, 0);">
+              <img style="height: 140px;width: 100%;object-fit: cover;" src="5.jpg" alt="">
+              <!-- <span class="fw-bold text-white text-center"
+        style="position: absolute;left: 11px; background-color: blue;bottom: 0;padding: 2px 23px;font-size: 14px;">Elon
+        MUSK</span> -->
+            </div>
+
+            <div class="col-md-3  sevan-box col-6 py-2 d-flex justify-content-center align-items-center"
+              style="position: relative;overflow: hidden;border: 1px solid rgb(0, 0, 0);">
+              <img style="height: 140px;width: 100%;object-fit: cover;" src="6.jpg" alt="">
+              <!-- <span class="fw-bold text-white text-center"
+      style="position: absolute;left: 11px; background-color: blue;bottom: 0;padding: 2px 23px;font-size: 14px;">Elon
+      MUSK</span> -->
+            </div>
+
+            <div class="col-md-3  sevan-box col-6 py-2 d-flex justify-content-center align-items-center"
+              style="position: relative;overflow: hidden;border: 1px solid rgb(0, 0, 0);">
+              <img style="height: 140px;width: 100%;object-fit: cover;" src="7.jpg" alt="">
+              <!-- <span class="fw-bold text-white text-center"
+    style="position: absolute;left: 11px; background-color: blue;bottom: 0;padding: 2px 23px;font-size: 14px;">Elon
+    MUSK</span> -->
+            </div>
+
+            <div class="col-md-3  sevan-box col-6 py-2 d-flex justify-content-center align-items-center"
+              style="position: relative;overflow: hidden;border: 1px solid rgb(0, 0, 0);">
+              <img style="height: 140px;width: 100%;object-fit: cover;" src="8.jpg" alt="">
+              <!-- <span class="fw-bold text-white text-center"
+  style="position: absolute;left: 11px; background-color: blue;bottom: 0;padding: 2px 23px;font-size: 14px;">Elon
+  MUSK</span> -->
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEVAN - SECTION -->
+  <div class="container-fluid py-5" style="background-image: url(4\ \(2\).jpg);background-size: cover;">
+
+    <div class="container">
+
+      <div class="row" data-aos="fade-down" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1800">
+
+        <h2 class="display-3  fw-bold text-center"
+          style="-webkit-text-stroke: 1px rgba(255, 255, 255, 0.49);color: transparent;">Event <span
+            style="background: -webkit-linear-gradient(#021a79, #84da71); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+            Schedule</span></h2>
+        <div class="w-100 sevan-div mt-3  ">
+          <div class="row d-flex justify-content-center align-items-center">
+
+            <div class="col-md-2  col-4  d-flex justify-content-center align-items-center flex-column"
+              style="border: 1px solid #ffffff96; border-radius: 50px 0 0 50px;">
+              <h4 class="fw-bold text-white p-2 fs-5">DAY 1</h4>
+              <p class="fw-bold text-white ">Dec 3, 2023</p>
+            </div>
+
+            <div class="col-md-2 col-4  d-flex justify-content-center align-items-center flex-column"
+              style="border: 1px solid #ffffff96;">
+              <h4 class="fw-bold text-white fs-5 p-2">DAY 2</h4>
+              <p class="fw-bold text-white ">Dec 3, 2023</p>
+            </div>
+
+            <div class="col-md-2  col-4  d-flex justify-content-center align-items-center flex-column"
+              style="border: 1px solid #ffffff96;">
+              <h4 class="fw-bold text-white fs-5 p-2">DAY 3</h4>
+              <p class="fw-bold text-white ">Dec 3, 2023</p>
+            </div>
+            <div class="col-md-2 col-4  d-flex justify-content-center align-items-center flex-column"
+              style="border: 1px solid #ffffff96;">
+              <h4 class="fw-bold text-white fs-5 p-2">DAY 4</h4>
+              <p class="fw-bold text-white ">Dec 3, 2023</p>
+            </div>
+
+
+            <div class="col-md-2 col-4  d-flex justify-content-center align-items-center flex-column"
+              style="border: 1px solid #ffffff96;border-radius: 0 50px 50px 0;">
+              <h4 class="fw-bold text-white fs-5 p-2">DAY 5</h4>
+              <p class="fw-bold text-white ">Dec 3, 2023</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="w-100 py-5  d-flex justify-content-center align-items-center flex-column" style="overflow: hidden;">
+
+        <div class="row py-3" data-aos="fade-down" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1800">
+          <div class="col-lg-2 col-md-6 col-6 py-3 d-flex justify-content-center align-items-start ">
+            <span class="fw-bold text-white">08:00 - 12:00 AM</span>
+          </div>
+          <div class="col-lg-2 col-md-6 col-6 py-3 d-flex justify-content-center align-items-start">
+            <img style="height: 120px;width: 120px;object-fit: contain;box-shadow: 10px 10px 0px rgb(0, 13, 255);"
+              src="1 (2).jpg" alt="">
+          </div>
+          <div class="col-lg-6 col-md-12 col-12 py-4 d-flex justify-content-center align-items-start flex-column">
+            <span class="fw-bold text-white">Elon Musk</span>
+            <p style="color: #02D982;"> Founder & CEO</p>
+            <span class="fw-bold text-white">The Art and Business of Electric Car</span>
+            <p style="color: #ffffff80;font-size: 18px;font-weight: 500;">Get ready to your excitement and fuel your
+              passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to
+              immerse yourself in the captivating world of cars!</p>
+          </div>
+        </div>
+
+        <div class="row py-3" style="background-color: rgba(9, 20, 240, 0.209);" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1800">
+          <div class="col-lg-2 col-md-6 col-6 py-3 d-flex justify-content-center align-items-start ">
+            <span class="fw-bold text-white">08:00 - 12:00 AM</span>
+          </div>
+          <div class="col-lg-2 col-md-6 col-6 py-3 d-flex justify-content-center align-items-start">
+            <img style="height: 120px;width: 120px;object-fit: contain;box-shadow: 10px 10px 0px rgb(0, 13, 255);"
+              src="1 (2).jpg" alt="">
+          </div>
+          <div class="col-lg-6 col-md-11 col-11 py-3 d-flex justify-content-center align-items-start flex-column">
+            <span class="fw-bold text-white">Elon Musk</span>
+            <p style="color: #02D982;"> Founder & CEO</p>
+            <span class="fw-bold text-white">The Art and Business of Electric Car</span>
+            <p style="color: #ffffff80;font-size: 18px;font-weight: 500;">Get ready to your excitement and fuel your
+              passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to
+              immerse yourself in the captivating world of cars!</p>
+          </div>
+        </div>
+
+        <div class="row py-3" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1800">
+          <div class="col-lg-2 col-md-6 col-6 py-3 d-flex justify-content-center align-items-start ">
+            <span class="fw-bold text-white">08:00 - 12:00 AM</span>
+          </div>
+          <div class="col-lg-2 col-md-6 col-6 py-3 d-flex justify-content-center align-items-start">
+            <img style="height: 120px;width: 120px;object-fit: contain;box-shadow: 10px 10px 0px rgb(0, 13, 255);"
+              src="1 (2).jpg" alt="">
+          </div>
+          <div class="col-lg-6 col-md-12 col-12 py-4 d-flex justify-content-center align-items-start flex-column">
+            <span class="fw-bold text-white">Elon Musk</span>
+            <p style="color: #02D982;"> Founder & CEO</p>
+            <span class="fw-bold text-white">The Art and Business of Electric Car</span>
+            <p style="color: #ffffff80;font-size: 18px;font-weight: 500;">Get ready to your excitement and fuel your
+              passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to
+              immerse yourself in the captivating world of cars!</p>
+          </div>
+        </div>
+
+        <div class="row" style="background-color: rgba(9, 20, 240, 0.209);" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1800">
+          <div class="col-lg-2 col-md-6 col-6 py-3 d-flex justify-content-center align-items-start ">
+            <span class="fw-bold text-white">08:00 - 12:00 AM</span>
+          </div>
+          <div class="col-lg-2 col-md-6 col-6 py-3 d-flex justify-content-center align-items-start">
+            <img style="height: 120px;width: 120px;object-fit: contain;box-shadow: 10px 10px 0px rgb(0, 13, 255);"
+              src="1 (2).jpg" alt="">
+          </div>
+          <div class="col-lg-6 col-md-12 col-12 py-4 d-flex justify-content-center align-items-start flex-column">
+            <span class="fw-bold text-white">Elon Musk</span>
+            <p style="color: #02D982;"> Founder & CEO</p>
+            <span class="fw-bold text-white">The Art and Business of Electric Car</span>
+            <p style="color: #ffffff80;font-size: 18px;font-weight: 500;">Get ready to your excitement and fuel your
+              passion for all things automotive at this year's highly anticipated car event! Buckle up andget ready to
+              immerse yourself in the captivating world of cars!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- EAT - SECTION -->
+  <div class="container-fluid bg-black py-4" id="Tickets">
+
+    <div class="container">
+      <div class="row mt-5 py-3" data-aos="fade-right" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1800">
+        <h1 class="text-center text-white fw-bold display-3 ">GET <span style="background: -webkit-linear-gradient(#021a79, #84da71);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;">TICKETS</span></h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4  d-flex justify-content-center align-items-center py-3" data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1800">
+          <div class="col-12 py-3 d-flex justify-content-center align-items-center flex-column"
+            style="background: rgb(31,2,255);background: linear-gradient(140deg, rgba(31,2,255,1) 10%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 74%, rgba(0,255,248,1) 90%);">
+            <h1 class="fw-bold text-white display-5">ONE DAY</h1>
+            <span style="font-size: 20px;color: blue;font-weight: bold;"> TICKET</span>
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" class="display-2 fw-bold text-white">
+              <span class="fs-4">$</span> 49
+            </h2>
+
+            <div class="d-flex justify-content-start align-items-start flex-column">
+              <span class="d-flex justify-content-center align-items-center"
+                style="color: white;font-weight: 540;font-size: 18px;"><i class="bi bi-check text-primary fs-4"></i>
+                Ticket for one day</span>
+              <span class="d-flex justify-content-center align-items-center"
+                style="color: white;font-weight: 540;font-size: 18px;"><i class="bi bi-check text-primary fs-4"></i>
+                Chance to win doorprize</span>
+              <span class="d-flex justify-content-center align-items-center me-3"> <i
+                  class="bi bi-x text-white fs-3 fw-bold"></i><strike
+                  style="color: gray;font-weight: 590;font-size: 18px;">Free merchandise</strike> </span>
+              <span class="d-flex justify-content-center align-items-center me-3"> <i
+                  class="bi bi-x text-white fs-3 fw-bold"></i><strike
+                  style="color: gray;font-weight: 590;font-size: 18px;">Free Vouchers</strike> </span>
+              <span class="d-flex justify-content-center align-items-center me-3"> <i
+                  class="bi bi-x text-white fs-3 fw-bold"></i><strike
+                  style="color: gray;font-weight: 590;font-size: 18px;">Meet The Guest Starts </strike> </span>
+            </div>
+
+            <div class="col-11 py-3 mt-3 d-flex justify-content- align-items-start">
+              <img class="me-5" style="height: 60px;object-fit: cover;" src="arrow-up-right.png" alt="">
+              <button class="eat-bt">BUY TICKET</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center  align-items-center py-3"  data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1800">
+          <div class="col-12 py-3 d-flex justify-content-center align-items-center flex-column"
+            style="background: rgb(31,2,255);background: linear-gradient(140deg, rgba(31,2,255,1) 10%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 74%, rgba(0,255,248,1) 90%);">
+            <h1 class="fw-bold text-white display-5">THREE DAY</h1>
+            <span style="font-size: 20px;color: blue;font-weight: bold;"> TICKET</span>
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" class="display-2 fw-bold text-white">
+              <span class="fs-4">$</span> 89
+            </h2>
+
+            <div class="d-flex justify-content-start align-items-start flex-column">
+              <span class="d-flex justify-content-center align-items-center"
+                style="color: white;font-weight: 540;font-size: 18px;"><i class="bi bi-check text-primary fs-4"></i>
+                Ticket for one day</span>
+              <span class="d-flex justify-content-center align-items-center"
+                style="color: white;font-weight: 540;font-size: 18px;"><i class="bi bi-check text-primary fs-4"></i>
+                Chance to win doorprize</span>
+              <span class="d-flex justify-content-center align-items-center me-3"> <i
+                  class="bi bi-x text-white fs-3 fw-bold"></i><strike
+                  style="color: gray;font-weight: 590;font-size: 18px;">Free merchandise</strike> </span>
+              <span class="d-flex justify-content-center align-items-center me-3"> <i
+                  class="bi bi-x text-white fs-3 fw-bold"></i><strike
+                  style="color: gray;font-weight: 590;font-size: 18px;">Free Vouchers</strike> </span>
+              <span class="d-flex justify-content-center align-items-center me-3"> <i
+                  class="bi bi-x text-white fs-3 fw-bold"></i><strike
+                  style="color: gray;font-weight: 590;font-size: 18px;">Meet The Guest Starts </strike> </span>
+            </div>
+
+            <div class="col-11 py-3 mt-3 d-flex justify-content- align-items-start">
+              <img class="me-5" style="height: 60px;object-fit: cover;" src="arrow-up-right.png" alt="">
+              <button class="eat-bt">BUY TICKET</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center align-items-center py-3"  data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1800">
+          <div class="col-12 py-3 d-flex justify-content-center align-items-center flex-column"
+            style="background: rgb(31,2,255);background: linear-gradient(140deg, rgba(31,2,255,1) 10%, rgba(0,0,0,1) 24%, rgba(0,0,0,1) 74%, rgba(0,255,248,1) 90%);">
+            <h1 class="fw-bold text-white display-5">ALL DAY</h1>
+            <span style="font-size: 20px;color: blue;font-weight: bold;"> TICKET</span>
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" class="display-2 fw-bold text-white">
+              <span class="fs-4">$</span> 109
+            </h2>
+
+            <div class="d-flex justify-content-start align-items-start flex-column">
+              <span class="d-flex justify-content-center align-items-center"
+                style="color: white;font-weight: 540;font-size: 18px;"><i class="bi bi-check text-primary fs-4"></i>
+                Ticket for one day</span>
+              <span class="d-flex justify-content-center align-items-center"
+                style="color: white;font-weight: 540;font-size: 18px;"><i class="bi bi-check text-primary fs-4"></i>
+                Chance to win doorprize</span>
+              <span class="d-flex justify-content-center align-items-center me-3"> <i
+                  class="bi bi-x text-white fs-3 fw-bold"></i><strike
+                  style="color: gray;font-weight: 590;font-size: 18px;">Free merchandise</strike> </span>
+              <span class="d-flex justify-content-center align-items-center me-3"> <i
+                  class="bi bi-x text-white fs-3 fw-bold"></i><strike
+                  style="color: gray;font-weight: 590;font-size: 18px;">Free Vouchers</strike> </span>
+              <span class="d-flex justify-content-center align-items-center me-3"> <i
+                  class="bi bi-x text-white fs-3 fw-bold"></i><strike
+                  style="color: gray;font-weight: 590;font-size: 18px;">Meet The Guest Starts </strike> </span>
+            </div>
+
+            <div class="col-11 py-3 mt-3 d-flex justify-content- align-items-start">
+              <img class="me-5" style="height: 60px;object-fit: cover;" src="arrow-up-right.png" alt="">
+              <button class="eat-bt">BUY TICKET</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NINE - SECTION -->
+
+  <div class="container-fluid bg-black  py-5">
+
+    <div class="row"  data-aos="slide-right" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1800">
+      <h1 class="fw-bold text-white text-center display-3
+      "> <span
+          style="-webkit-text-stroke: 1px rgba(255, 255, 255, .75);text-transform: uppercase;color: transparent;">WHAT</span>
+        <span style="background: -webkit-linear-gradient(#021a79, #84da71);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;"> THEY </span> SAYS
+      </h1>
+    </div>
+
+    <div class="row py-5 flex-nowrap overflow-hidden">
+
+      <div class="col-lg-3 slide-card d-flex justify-content-center align-items-start flex-column position-relative">
+        <div class="col-12 py-5 slide-box"
+          style="height: 300px;position: relative;border: 1px solid #0072ff;border-radius: 10px;">
+          <i style="position: absolute;background: -webkit-linear-gradient(#021a79, #84da71);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;top: -20px;right: 0;transform: rotate(180deg);font-size: 100px;"
+            class="bi bi-quote"></i>
+          <p class="ms-4" style="color: white;font-size: 17px;z-index: 111;position: relative;">What a fantastic
+            family-friendly automotive
+            event! My kids wide-eyed with excitement as they explored the various car displays and participated in
+            the interactive activities.</p>
+
+          <div class="d-flex mt-2">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+              <img style="border-radius: 50%;height: 60px;" src="2 (2).jpg" alt="">
+            </div>
+            <div class="col-md-5 d-flex justify-content-center align-items-center ">
+              <p class="mt-2 fw-bold" style="color: #b2b0b0;">salar (Aspering <br>Machine)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 slide-card d-flex justify-content-center align-items-start flex-column position-relative">
+        <div class="col-12 py-5 slide-box"
+          style="height: 300px;position: relative;border: 1px solid #0072ff;border-radius: 10px;">
+          <i style="position: absolute;background: -webkit-linear-gradient(#021a79, #84da71);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;top: -20px;right: 0;transform: rotate(180deg);font-size: 100px;"
+            class="bi bi-quote"></i>
+          <p class="ms-4" style="color: white;font-size: 17px;z-index: 111;position: relative;">What a fantastic
+            family-friendly automotive
+            event! My kids wide-eyed with excitement as they explored the various car displays and participated in
+            the interactive activities.</p>
+
+          <div class="d-flex mt-2">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+              <img style="border-radius: 50%;height: 60px;" src="3 (1).jpg" alt="">
+            </div>
+            <div class="col-md-5 d-flex justify-content-center align-items-center ">
+              <p class="mt-2 fw-bold" style="color: #b2b0b0;">kano (Gyouk <br>Lopis)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 slide-card d-flex justify-content-center align-items-start flex-column position-relative">
+        <div class="col-12 py-5 slide-box"
+          style="height: 300px;position: relative;border: 1px solid #0072ff;border-radius: 10px;">
+          <i style="position: absolute;background: -webkit-linear-gradient(#021a79, #84da71);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;top: -20px;right: 0;transform: rotate(180deg);font-size: 100px;"
+            class="bi bi-quote"></i>
+          <p class="ms-4" style="color: white;font-size: 17px;z-index: 111;position: relative;">What a fantastic
+            family-friendly automotive
+            event! My kids wide-eyed with excitement as they explored the various car displays and participated in
+            the interactive activities.</p>
+
+          <div class="d-flex mt-2">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+              <img style="border-radius: 50%;height: 60px;" src="1 (3).jpg" alt="">
+            </div>
+            <div class="col-md-5 d-flex justify-content-center align-items-center ">
+              <p class="mt-2 fw-bold" style="color: #b2b0b0;">Yours (Ediyn <br>Logik)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 slide-card d-flex justify-content-center align-items-start flex-column position-relative">
+        <div class="col-12 py-5 slide-box"
+          style="height: 300px;position: relative;border: 1px solid #0072ff;border-radius: 10px;">
+          <i style="position: absolute;background: -webkit-linear-gradient(#021a79, #84da71);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;top: -20px;right: 0;transform: rotate(180deg);font-size: 100px;"
+            class="bi bi-quote"></i>
+          <p class="ms-4" style="color: white;font-size: 17px;z-index: 111;position: relative;">What a fantastic
+            family-friendly automotive
+            event! My kids wide-eyed with excitement as they explored the various car displays and participated in
+            the interactive activities.</p>
+
+          <div class="d-flex mt-2">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+              <img style="border-radius: 50%;height: 60px;" src="4 (4).jpg" alt="">
+            </div>
+            <div class="col-md-5 d-flex justify-content-center align-items-center ">
+              <p class="mt-2 fw-bold" style="color: #b2b0b0;">salar (Raken <br>Hoves)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 slide-card d-flex justify-content-center align-items-start flex-column position-relative">
+        <div class="col-12 py-5 slide-box"
+          style="height: 300px;position: relative;border: 1px solid #0072ff;border-radius: 10px;">
+          <i style="position: absolute;background: -webkit-linear-gradient(#021a79, #84da71);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;top: -20px;right: 0;transform: rotate(180deg);font-size: 100px;"
+            class="bi bi-quote"></i>
+          <p class="ms-4" style="color: white;font-size: 17px;z-index: 111;position: relative;">What a fantastic
+            family-friendly automotive
+            event! My kids wide-eyed with excitement as they explored the various car displays and participated in
+            the interactive activities.</p>
+
+          <div class="d-flex mt-2">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+              <img style="border-radius: 50%;height: 60px;" src="7(1).jpg" alt="">
+            </div>
+            <div class="col-md-5 d-flex justify-content-center align-items-center ">
+              <p class="mt-2 fw-bold" style="color: #b2b0b0;">Mokha (fight <br>Mesok)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 slide-card d-flex justify-content-center align-items-start flex-column position-relative">
+        <div class="col-12 py-5 slide-box"
+          style="height: 300px;position: relative;border: 1px solid #0072ff;border-radius: 10px;">
+          <i style="position: absolute;background: -webkit-linear-gradient(#021a79, #84da71);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;top: -20px;right: 0;transform: rotate(180deg);font-size: 100px;"
+            class="bi bi-quote"></i>
+          <p class="ms-4" style="color: white;font-size: 17px;z-index: 111;position: relative;">What a fantastic
+            family-friendly automotive
+            event! My kids wide-eyed with excitement as they explored the various car displays and participated in
+            the interactive activities.</p>
+
+          <div class="d-flex mt-2">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+              <img style="border-radius: 50%;height: 60px;" src="7(1).jpg" alt="">
+            </div>
+            <div class="col-md-5 d-flex justify-content-center align-items-center ">
+              <p class="mt-2 fw-bold" style="color: #b2b0b0;">nothia (dekhn <br>Mokha)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 slide-card d-flex justify-content-center align-items-start flex-column position-relative">
+        <div class="col-12 py-5 slide-box"
+          style="height: 300px;position: relative;border: 1px solid #0072ff;border-radius: 10px;">
+          <i style="position: absolute;background: -webkit-linear-gradient(#021a79, #84da71);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;top: -20px;right: 0;transform: rotate(180deg);font-size: 100px;"
+            class="bi bi-quote"></i>
+          <p class="ms-4" style="color: white;font-size: 17px;z-index: 111;position: relative;">What a fantastic
+            family-friendly automotive
+            event! My kids wide-eyed with excitement as they explored the various car displays and participated in
+            the interactive activities.</p>
+
+          <div class="d-flex mt-2">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+              <img style="border-radius: 50%;height: 60px;" src="7(1).jpg" alt="">
+            </div>
+            <div class="col-md-5 d-flex justify-content-center align-items-center ">
+              <p class="mt-2 fw-bold" style="color: #b2b0b0;">John (rether <br>Machine)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      ]
+
+
+    </div>
+
+
+    <div class="row mt-4  d-flex justify-content-center align-items-center">
+      <button style="width: 50px;background-color: #ffffff;height: 3px; transition: .3s linear;" onclick="slidefun(0)"
+        class="slidee btn "></button>
+      <button style="width: 50px;background-color: #ffffff;height: 11px;transition: .3s linear;" onclick="slidefun(1)"
+        class="slidee btn ms-2"></button>
+      <button style="width: 50px;background-color: #ffffff;height: 11px;transition: .3s linear;" onclick="slidefun(2)"
+        class="slidee btn ms-2"></button>
+      <button style="width: 50px;background-color: #ffffff;height: 11px;transition: .3s linear;" onclick="slidefun(3)"
+        class="slidee btn ms-2"></button>
+
+    </div>
+  </div>
+
+
+  <script>
+
+    let slidecard = document.getElementsByClassName('slide-card');
+    let sliderIndex = ['0%', '-25%', '-50%', '0%',];
+    slidecard[0].style.transition = ".3s linear";
+    slidecard[1].style.transition = ".3s linear";
+    slidecard[2].style.transition = ".3s linear";
+    slidecard[3].style.transition = ".3s linear";
+    slidecard[4].style.transition = ".3s linear";
+    slidecard[5].style.transition = ".3s linear";
+
+    function slidefun(index) {
+      slidecard[0].style.marginLeft = sliderIndex[index];
+    }
+  </script>
+
+
+
+
+  <!-- TEN - SECTION -->
+  <div class="container-fluid bg-black">
+
+    <div class="container">
+
+      <div class="row py-2"  data-aos="fade-down" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1800">
+        <span class="d-flex justify-content-center align-items-center display-1">
+          <h1 class="display-3 fw-bold" style="-webkit-text-stroke: 1px rgba(255, 255, 255, .75);color: transparent;">
+            OUR</h1>
+          <h2 class="display-3 fw-bold ms-3"
+            style="background: -webkit-linear-gradient(#021a79, #84da71);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+            SPONCERS </h2>
+        </span>
+      </div>
+
+      <div class="row py-5"  data-aos="fade-down" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1800">
+
+        <div class="col-lg-2 py-2 col-md-6 col-6">
+          <div class="col-11 p-3"
+            style="background: #3F5EFB;
+background: linear-gradient(339deg, rgba(63, 94, 251, 0.89) 20%, rgba(252, 70, 107, 0) 43%);border: 1px solid rgba(248, 244, 244, 0.289);">
+            <img style="height: 60px;width: 100%;object-fit: cover;" src="logo-1.png" alt="">
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 py-2 col-md-6 col-6">
+          <div class="col-11 p-3"
+            style="background: #3F5EFB;
+background: linear-gradient(339deg, rgba(63, 94, 251, 0.89) 20%, rgba(252, 70, 107, 0) 43%);border: 1px solid rgba(248, 244, 244, 0.289);">
+            <img style="height: 60px;width: 100%;object-fit: cover;" src="logo-2.png" alt="">
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 py-2 col-md-6 col-6">
+          <div class="col-11 p-3"
+            style="background: #3F5EFB;
+background: linear-gradient(339deg, rgba(63, 94, 251, 0.89) 20%, rgba(252, 70, 107, 0) 43%);border: 1px solid rgba(248, 244, 244, 0.289);">
+            <img style="height: 60px;width: 100%;object-fit: cover;" src="logo-3.png" alt="">
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 py-2 col-md-6 col-6">
+          <div class="col-11 p-3"
+            style="background: #3F5EFB;
+background: linear-gradient(339deg, rgba(63, 94, 251, 0.89) 20%, rgba(252, 70, 107, 0) 43%);border: 1px solid rgba(248, 244, 244, 0.289);">
+            <img style="height: 60px;width: 100%;object-fit: cover;" src="logo-4.png" alt="">
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 py-2 col-md-6 col-6 ">
+          <div class="col-11 p-3"
+            style="background: #3F5EFB;
+background: linear-gradient(339deg, rgba(63, 94, 251, 0.89) 20%, rgba(252, 70, 107, 0) 43%);border: 1px solid rgba(248, 244, 244, 0.289);">
+            <img style="height: 60px;width: 100%;object-fit: cover;" src="logo-5.png" alt="">
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 py-2 col-md-6 col-6">
+          <div class="col-11 p-3"
+            style="background: #3F5EFB;
+background: linear-gradient(339deg, rgba(63, 94, 251, 0.89) 20%, rgba(252, 70, 107, 0) 43%);border: 1px solid rgba(248, 244, 244, 0.289);">
+            <img style="height: 60px;width: 100%;object-fit: cover;" src="logo-6.png" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLICK - SECTION -->
+   
+  <div class="container-fluid py-5 bg-black" style="background-image: url(2-flip\ \(2\).jpg);background-size: contain;background-repeat: no-repeat;background-position: center;">
+    <div class="container">
+        <div class="row">
+            <div style="height: 60vh;" id="bgg" class="col-7 bg-box mx-auto"></div>
+            <div style="height: 14vh;margin-top: 20px;" class="col-md-7  d-flex align-items-center justify-content-evenly mx-auto " >
+                <div class="box py-2" onclick="bgChanged(0)">
+                    <img style="object-fit: cover;" src="onessss.jpg" alt="">
+                </div>
+                <div class="box py-2" onclick="bgChanged(1)">
+                    <img style="object-fit: cover;" src="two.jpg" alt="">
+
+                </div>
+                <div class="box py-2" onclick="bgChanged(2)">
+                    <img style="object-fit: cover;" src="thre.jpg" alt="">
+                </div>
+                <div class="box py-2" onclick="bgChanged(3)">
+                    <img style="object-fit: cover;" src="for.jpg" alt="">
+                </div>
+                <div class="box py-2" onclick="bgChanged(4)">
+                    <img style="object-fit: cover;" src="six.jpg" alt="">
+                </div>
+                <div onclick="bgChanged(5)" class="box py-2">
+                    <img style="object-fit: cover;" src="two.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let bgChangerBox = document.getElementById('bgg');
+    let bgInd = [
+        "url(onessss.jpg)",
+        "url(two.jpg)",
+        "url(thre.jpg)",
+        "url(for.jpg)",
+        "url(six.jpg)",
+        "url(two.jpg)"];
+
+    function bgChanged(index) {
+        bgChangerBox.style.transition = ".4s ease";
+        bgChangerBox.style.background = bgInd[index];
+    }
+</script>
+
+
+
+
+  <!-- ELEVAN - SECTION -->
+
+  <div class="container-fluid bg-black">
+
+    <div class="container">
+
+      <div class="row">
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.6914691790716!2d-118.24599172565507!3d34.051784617756795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c648d9808fbd%3A0xb79dfbc6ae338c12!2s100%20Main%20St%2C%20Los%20Angeles%2C%20CA%2090012%2C%20USA!5e0!3m2!1sen!2sin!4v1744437397819!5m2!1sen!2sin"
+          width="600" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER - SECTION -->
+
+  <div class="container-fluid bg-black" id="Contact">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-4 py-4 d-flex justify-content-start align-items-start">
+          <a class="mt-3 " href="https://telegram.me/ikramdev"><i class="bi bi-send ms-2 foot"
+              style="background-color: rgba(156, 150, 150, 0.161);padding: 8px 14px;border-bottom: 2px solid #3aaf9b;font-size: 16px;color: #0033ff;"></i></a>
+
+          <a class="mt-3" href="https://www.facebook.com/share/4RbYwXYG8NE41Tk1/"><i class="bi bi-facebook ms-2"
+              style="background-color: rgba(156, 150, 150, 0.161);padding: 8px 14px;border-bottom: 2px solid #3aaf9b; font-size: 16px;color: #0033ff;"></i></a>
+
+          <a class="mt-3" href="https://telegram.me/ikramdev"><i class="bi bi-send ms-2 "
+              style="background-color: rgba(156, 150, 150, 0.161);padding: 8px 14px;border-bottom: 2px solid #3aaf9b;font-size: 16px;color: #0033ff;"></i></a>
+
+          <a class="mt-3" href="https://www.facebook.com/share/4RbYwXYG8NE41Tk1/"><i class="bi bi-facebook ms-2"
+              style="background-color: rgba(156, 150, 150, 0.161);padding: 8px 14px;border-bottom: 2px solid #3aaf9b; font-size: 16px;color: #0033ff;"></i></a>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center align-items-center">
+          <img style="object-fit: cover;" src="logo (4).png" alt="">
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center align-items-center">
+          <p class="mt-3" style="color: #b2b0b0;font-weight: 600;">Copyright 2025 - Autovent by Designesia</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
